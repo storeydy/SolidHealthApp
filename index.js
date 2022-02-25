@@ -41,7 +41,6 @@ import {
     getUrl,
     setUrl
 } from "@inrupt/solid-client";
-// import * as solidClient from '@inrupt/solid-client'
 import { Session, getDefaultSession, fetch } from "@inrupt/solid-client-authn-browser";
 import { SCHEMA_INRUPT, VCARD, FOAF, RDF } from "@inrupt/vocab-common-rdf";
 import { departments } from "./healthcareDepartments";
