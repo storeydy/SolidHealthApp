@@ -40,10 +40,10 @@ import {
     UrlString,
     getUrl,
     setUrl
-} from "/@inrupt/solid-client";
+} from "@inrupt/solid-client";
 
-import { Session, getDefaultSession, fetch } from "/@inrupt/solid-client-authn-browser";
-import { SCHEMA_INRUPT, VCARD, FOAF, RDF } from "/@inrupt/vocab-common-rdf";
+import { Session, getDefaultSession, fetch } from "@inrupt/solid-client-authn-browser";
+import { SCHEMA_INRUPT, VCARD, FOAF, RDF } from "@inrupt/vocab-common-rdf";
 import { departments } from "./healthcareDepartments";
 import { checkIfDatasetExists, checkIfAdministrator, getDepartments, getFilesInDataset, getAccessToDataset, checkIfPersonHasAccess } from "./podReader";
 import { writeAppointment, createDepartmentDataset, storeMedicalInsitutionInformation, uploadMedicalRecord, grantAccessToDataset, createInsuranceDiagnosesDataset, addThingToDataset } from "./podWriter";
@@ -1370,3 +1370,7 @@ deleteFileForm.addEventListener("submit", (event) => {
     deleteFileFromUrl();
 })
 
+var ghPages = require('gh-pages')
+ghPages.publish('dist', function(err) {});
+
+ghPages.publish(dir, callback);
